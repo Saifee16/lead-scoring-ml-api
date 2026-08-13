@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "model_version": "2.0.0",
+  "algorithm": "LogisticRegression",
+  "selected_model": "logistic_default",
+  "trained_at_utc": "2026-08-12T23:24:46.354006+00:00",
+  "model_sha256": "8a3301d56ac6c145c4a6c258511840de3383f80c4ca05c6fd4884a97339268c0",
+  "dataset_sha256": "552fb426b2276ef16903c9f6b99198aeac38be1a2e76248c103a7d8a03930cec",
+  "feature_contract": [
+    "company_size",
+    "annual_revenue_k",
+    "website_visits_30d",
+    "email_opens_30d",
+    "demo_requests_30d",
+    "form_submissions_30d",
+    "days_since_last_contact",
+    "lead_source",
+    "industry",
+    "decision_maker_engaged"
+  ],
+  "feature_count": 10,
+  "target": "converted",
+  "threshold": 0.24,
+  "threshold_strategy": "business_cost",
+  "library_versions": {
+    "python": "3.12.5",
+    "scikit_learn": "1.5.2",
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "joblib": "1.5.0"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "selected_model": "logistic_default",
+  "selection_metric": "brier_score",
+  "selection_split": "validation",
+  "dataset_rows": 5000,
+  "training_rows": 3200,
+  "validation_rows": 800,
+  "test_rows": 1000,
+  "positive_rate": 0.267,
+  "threshold": 0.24,
+  "metrics": {
+    "accuracy": 0.652,
+    "precision": 0.40939597315436244,
+    "recall": 0.6853932584269663,
+    "f1": 0.5126050420168067,
+    "roc_auc": 0.7286100423583755,
+    "brier_score": 0.16912024415861,
+    "log_loss": 0.5124329263761319
+  },
+  "confusion_matrix": {
+    "true_negative": 469,
+    "false_positive": 264,
+    "false_negative": 84,
+    "true_positive": 183
+  },
+  "calibration": {
+    "brier_score": 0.16912024415861,
+    "log_loss": 0.5124329263761319,
+    "bins": [
+      {
+        "mean_predicted_probability": 0.05421543495128089,
+        "fraction_positive": 0.05
+      },
+      {
+        "mean_predicted_probability": 0.0915997964875592,
+        "fraction_positive": 0.06
+      },
+      {
+        "mean_predicted_probability": 0.12478461431511492,
+        "fraction_positive": 0.22
+      },
+      {
+        "mean_predicted_probability": 0.15836463016080438,
+        "fraction_positive": 0.2
+      },
+      {
+        "mean_predicted_probability": 0.1990306990513645,
+        "fraction_positive": 0.19
+      },
+      {
+        "mean_predicted_probability": 0.23907065118754503,
+        "fraction_positive": 0.22
+      },
+      {
+        "mean_predicted_probability": 0.29189595509177885,
+        "fraction_positive": 0.3
+      },
+      {
+        "mean_predicted_probability": 0.3649290817823402,
+        "fraction_positive": 0.39
+      },
+      {
+        "mean_predicted_probability": 0.46782625847834053,
+        "fraction_positive": 0.43
+      },
+      {
+        "mean_predicted_probability": 0.6759127912234058,
+        "fraction_positive": 0.61
+      }
+    ]
+  },
+  "threshold_analysis": {
+    "default_threshold": 0.5,
+    "f1_optimal_threshold": 0.26,
+    "business_cost_threshold": 0.24,
+    "selected_threshold": 0.24,
+    "selected_strategy": "business_cost",
+    "false_positive_cost": 1.0,
+    "false_negative_cost": 5.0,
+    "strategies": [
+      {
+        "strategy": "default",
+        "threshold": 0.5,
+        "precision": 0.608,
+        "recall": 0.35514018691588783,
+        "f1": 0.44837758112094395,
+        "false_positive": 49,
+        "false_negative": 138,
+        "business_cost": 739.0
+      },
+      {
+        "strategy": "f1",
+        "threshold": 0.26,
+        "precision": 0.47928994082840237,
+        "recall": 0.7570093457943925,
+        "f1": 0.5869565217391305,
+        "false_positive": 176,
+        "false_negative": 52,
+        "business_cost": 436.0
+      },
+      {
+        "strategy": "business_cost",
+        "threshold": 0.24,
+        "precision": 0.4575342465753425,
+        "recall": 0.780373831775701,
+        "f1": 0.5768566493955095,
+        "false_positive": 198,
+        "false_negative": 47,
+        "business_cost": 433.0
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "model_name": "logistic_default",
+      "accuracy": 0.76625,
+      "precision": 0.608,
+      "recall": 0.35514018691588783,
+      "f1": 0.44837758112094395,
+      "roc_auc": 0.7822637236451787,
+      "brier_score": 0.1571304240127628,
+      "log_loss": 0.47963716761399255
+    },
+    {
+      "model_name": "logistic_balanced",
+      "accuracy": 0.715,
+      "precision": 0.4785276073619632,
+      "recall": 0.7289719626168224,
+      "f1": 0.5777777777777777,
+      "roc_auc": 0.7828059711014002,
+      "brier_score": 0.19643110298040728,
+      "log_loss": 0.579208666644829
+    }
+  ]
+}
