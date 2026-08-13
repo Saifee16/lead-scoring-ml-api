@@ -1,4 +1,4 @@
-FROM python:3.12-slim AS trainer
+FROM python:3.14-slim AS trainer
 
 WORKDIR /build
 
@@ -16,7 +16,7 @@ COPY data ./data
 RUN python -m ml.train
 
 
-FROM python:3.12-slim AS runtime
+FROM python:3.14-slim AS runtime
 
 WORKDIR /app
 
