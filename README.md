@@ -686,8 +686,12 @@ docker build -t lead-scoring-ml-api .
 Run:
 
 ```bash
-docker run --env-file .env -p 8000:8000 lead-scoring-ml-api
+docker run -p 8000:8000 lead-scoring-ml-api
 ```
+
+The image has safe defaults and does not require a `.env` file. To override
+settings locally, create one from `.env.example` and pass it with
+`--env-file .env`.
 
 The Dockerfile uses two stages:
 
@@ -708,6 +712,10 @@ Docker Compose:
 ```bash
 docker compose up --build
 ```
+
+Compose treats `.env` as optional and applies the same safe defaults when it
+is absent. The service runs read-only with dropped Linux capabilities and a
+non-root application user.
 
 Stop:
 
