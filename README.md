@@ -122,6 +122,8 @@ Selected threshold:
 0.24 using business_cost strategy
 ```
 
+![Threshold analysis](artifacts/threshold_analysis.png)
+
 The key design principle is:
 
 > The model estimates a probability. The threshold converts that probability into a business action.
@@ -147,6 +149,8 @@ False negative: 84
 True positive:  183
 ```
 
+![Confusion matrix](artifacts/confusion_matrix.png)
+
 The lower threshold intentionally increases recall because the configured policy says missed converters are five times as costly as unnecessary sales review.
 
 ## Evaluation assets
@@ -165,6 +169,8 @@ artifacts/model.joblib
 ### Calibration warning
 
 The model's held-out Brier score is `0.169` and log loss is `0.512`.
+
+![Calibration curve](artifacts/calibration_curve.png)
 
 The calibration curve is a **diagnostic**, not a claim that the probabilities are perfectly calibrated. The synthetic benchmark still shows reliability error in some probability ranges. A real production deployment should validate calibration on organization-specific historical data and may add a separate calibration stage if needed.
 
