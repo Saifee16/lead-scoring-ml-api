@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/Saifee16/lead-scoring-ml-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Saifee16/lead-scoring-ml-api/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/Saifee16/lead-scoring-ml-api/actions/workflows/codeql.yml/badge.svg)](https://github.com/Saifee16/lead-scoring-ml-api/actions/workflows/codeql.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
 
 A reusable FastAPI ML inference service that demonstrates the full supervised-learning lifecycle: reproducible data generation, leakage-aware train/validation/test separation, preprocessing pipelines, probability-quality model selection, business-aware threshold tuning, calibration diagnostics, local logistic-regression contributions, artifact integrity verification, batch scoring, CSV scoring, Docker, CI, releases, and GHCR publishing.
 
